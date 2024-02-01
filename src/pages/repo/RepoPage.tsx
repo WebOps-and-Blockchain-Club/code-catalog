@@ -13,7 +13,6 @@ interface Repo {
 
 const Repo = () => {
   const [Repos, setRepos] = useState<Repo[]>([]);
-  const [showDetails, setShowDetails] = useState(true);
   const fetchRepos = () => {
     axios.get('api/get-repos')
       .then((res) => {
